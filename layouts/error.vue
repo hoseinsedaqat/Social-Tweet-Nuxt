@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>This is Error Page</h3>
+    <h3 class="error">This is Error Page</h3>
     <nuxt-link to="/">Home</nuxt-link>
   </div>
 </template>
@@ -11,4 +11,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.error{
+color:red;
+}
+</style>
