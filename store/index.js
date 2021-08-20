@@ -19,7 +19,7 @@ const createStore = () => {
             },
             deletedTweet: (state, id) => {
                 state.allTweet.splice(id, 1);
-                localStorage.setItem('tweet', JSON.stringify(state.allTweet))
+                localStorage.setItem('tweet', JSON.stringify(state.allTweet));
             }
         },
 
