@@ -5,15 +5,3 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "error",
-};
-</script>
-
-<style>
-.error {
-  color: red;
-}
-</style>
-
