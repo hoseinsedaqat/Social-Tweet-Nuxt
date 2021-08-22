@@ -62,6 +62,7 @@ export default {
         // for vuelidate
         this.$v.$touch;
         // regular code
+        // add vuex for this method later
         this.allTweet[this.$route.params.id - 1].tweet = this.tweetData.tweet;
         localStorage.setItem("tweet", JSON.stringify(this.allTweet));
         this.$router.push("/post");
