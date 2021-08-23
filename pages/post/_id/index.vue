@@ -21,38 +21,5 @@
                 </button>
               </form>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <app-footer></app-footer>
-  </div>
-</template>
-
-<script>
-import { required } from "vuelidate/lib/validators";
-import { mapState, mapMutations } from "vuex";
-// components
-import Header from "@/components/Header.vue";
-import Footer from "@/components/Footer.vue";
-export default {
-  data() {
-    return {
-      tweetData: {},
-    };
-  },
-  validations: {
-    tweetData: {
-      tweet: {
-        required,
-      },
-    },
-  },
-  components: {
-    "app-header": Header,
-    "app-footer": Footer,
-  },
-  methods: {
-    changeTweet() {
-      // for vuelidate
+ // for vuelidate
      e>
