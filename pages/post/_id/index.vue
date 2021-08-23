@@ -63,13 +63,14 @@ export default {
       } else {
         // for vuelidate
         this.$v.$touch;
+        // 1- vuex way
         this.changeTweetOne({
           id: this.tweetData.id,
           tweet: this.tweetData.tweet,
           data: this.tweetData.data,
           route: this.number,
         });
-        // regular code
+        // 2- regular code exist here for show other way
         // this.allTweet[this.$route.params.id - 1].tweet = this.tweetData.tweet;
         // localStorage.setItem("tweet", JSON.stringify(this.allTweet));
         this.$router.push("/post");
