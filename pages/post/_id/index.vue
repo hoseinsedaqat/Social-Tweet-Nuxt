@@ -55,34 +55,4 @@ export default {
   methods: {
     changeTweet() {
       // for vuelidate
-      if (this.$v.$invalid) {
-        this.$swal("Please Enter Content!");
-        return;
-      } else {
-        // for vuelidate
-        this.$v.$touch;
-        // regular code
-        // add vuex for this method later
-        this.allTweet[this.$route.params.id - 1].tweet = this.tweetData.tweet;
-        localStorage.setItem("tweet", JSON.stringify(this.allTweet));
-        this.$router.push("/post");
-      }
-    },
-  },
-  computed: {
-    ...mapMutations(["saveTweet"]),
-    ...mapState(["allTweet"]),
-  },
-  mounted() {
-    this.saveTweet;
-    this.tweetData = this.allTweet[this.$route.params.id - 1];
-    if (localStorage.getItem("user") === null) {
-      this.$router.push("/");
-    } else {
-      return;
-    }
-  },
-};
-</script>
-
-<style></style>
+     e>
