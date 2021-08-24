@@ -24,7 +24,7 @@ const createStore = () => {
             changeTweetOne: (state, tweet) => {
                 var forChangeTweet = state.allTweet[Number(tweet.route) - 1];
                 if (forChangeTweet.id === tweet.id) {
-                    // of course for test and after redesign it
+                    // of course for test and after that redesign it
                     console.log('true')
                     forChangeTweet.tweet = tweet.tweet;
                     localStorage.setItem('tweet', JSON.stringify(state.allTweet));
