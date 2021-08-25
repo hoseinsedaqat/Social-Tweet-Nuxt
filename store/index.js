@@ -29,7 +29,7 @@ const createStore = () => {
                     forChangeTweet.tweet = tweet.tweet;
                     localStorage.setItem('tweet', JSON.stringify(state.allTweet));
                 } else {
-                    // of course for test
+                    // of course for test and after that redesign it
                     console.log('false')
                 }
             }
