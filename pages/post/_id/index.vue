@@ -31,7 +31,7 @@
 
 <script>
 import { required } from "vuelidate/lib/validators";
-import { mapState, mapMutations } from "vuex";
+import { mapState, mapMutations, mapActions } from "vuex";
 // components
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
@@ -39,6 +39,7 @@ export default {
   data() {
     return {
       tweetData: {},
+      id: null,
     };
   },
   validations: {
@@ -53,6 +54,7 @@ export default {
     "app-footer": Footer,
   },
   methods: {
+    ...mapActions(["changeTweetOne"]),
     changeTweet() {
       // for vuelidate
       if (this.$v.$invalid) {
@@ -61,9 +63,15 @@ export default {
       } else {
         // for vuelidate
         this.$v.$touch;
+        this.changeTweetOne({
+          id: this.tweetData.id,
+          tweet: this.tweetData.tweet,
+          data: this.tweetData.data,
+          route: this.number,
+        });
         // regular code
-        this.allTweet[this.$route.params.id - 1].tweet = this.tweetData.tweet;
-        localStorage.setItem("tweet", JSON.stringify(this.allTweet));
+        // this.allTweet[this.$route.params.id - 1].tweet = this.tweetData.tweet;
+        // localStorage.setItem("tweet", JSON.stringify(this.allTweet));
         this.$router.push("/post");
       }
     },
@@ -75,6 +83,7 @@ export default {
   mounted() {
     this.saveTweet;
     this.tweetData = this.allTweet[this.$route.params.id - 1];
+    this.number = this.$route.params.id;
     if (localStorage.getItem("user") === null) {
       this.$router.push("/");
     } else {
