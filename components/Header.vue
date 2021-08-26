@@ -101,11 +101,5 @@ export default {
 </script>
 
 <style>
-nav {
-  border-bottom: 1px solid #333;
-}
 
-li a:hover {
-  color: red !important;
-}
 </style>

@@ -92,8 +92,5 @@ export default {
 </script>
 
 <style>
-.my-team {
-  width: 200px;
-  border-radius: 50%;
-}
+
 </style>

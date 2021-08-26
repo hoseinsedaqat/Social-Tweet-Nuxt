@@ -13,7 +13,5 @@ export default {
 </script>
 
 <style>
-footer {
-  border-top: 1px solid #333;
-}
+
 </style>

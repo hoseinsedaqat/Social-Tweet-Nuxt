@@ -29,14 +29,5 @@ export default {
 </script>
 
 <style>
-.showcase {
-  width: 100%;
-  height: 100vh;
-  background: url("../assets/img/XS1_8J9A7529.300dpi.jpg") no-repeat center center/cover;
-}
 
-h1 {
-  font-size: 3rem;
-  line-height: 1.7;
-}
 </style>

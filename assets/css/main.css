@@ -1,0 +1,64 @@
+footer {
+    border-top: 1px solid #333;
+}
+
+nav {
+    border-bottom: 1px solid #333;
+}
+
+li a:hover {
+    color: red !important;
+}
+
+.my-team {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.login-show {
+    width: 100%;
+    /* height: 100vh; */
+    /* background: url("@/assets/img/baybridge.png") no-repeat center center/cover; */
+}
+
+.like {
+    color: red;
+    cursor: pointer;
+}
+
+.no:hover {
+    color: wheat !important;
+}
+
+.showcase {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/XS1_8J9A7529.300dpi.jpg") no-repeat center center/cover;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 1.7;
+}
+
+.errorPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15rem 15rem 0 15rem;
+    border: 2px solid gray;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 2px 6px 5px #ccc;
+}
+
+.error {
+    font-family: "Courier New", Courier, monospace;
+    color: red;
+}
+
+.errorPage a {
+    color: #333;
+    text-decoration: none;
+}

@@ -99,12 +99,5 @@ export default {
 </script>
 
 <style>
-.like {
-  color: red;
-  cursor: pointer;
-}
 
-.no:hover {
-  color: wheat !important;
-}
 </style>

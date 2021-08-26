@@ -16,5 +16,9 @@
     "vue-sweetalert2": "^5.0.2",
     "vuelidate": "^0.7.6"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "fibers": "^5.0.0",
+    "sass": "^1.38.1",
+    "sass-loader": "^10.2.0"
+  }
 }

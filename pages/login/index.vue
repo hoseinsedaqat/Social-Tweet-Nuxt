@@ -126,9 +126,5 @@ export default {
 </script>
 
 <style>
-.login-show {
-  width: 100%;
-  /* height: 100vh; */
-  /* background: url("@/assets/img/baybridge.png") no-repeat center center/cover; */
-}
+
 </style>
