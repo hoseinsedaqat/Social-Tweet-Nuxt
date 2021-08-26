@@ -17,6 +17,7 @@ li a:hover {
 
 .login-show {
     width: 100%;
+    /* maybe after that add background-image */
     /* height: 100vh; */
     /* background: url("@/assets/img/baybridge.png") no-repeat center center/cover; */
 }
