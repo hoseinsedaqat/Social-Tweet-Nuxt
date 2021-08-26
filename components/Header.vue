@@ -76,6 +76,7 @@
 </template>
 
 <script>
+import { mapActions } from "vuex";
 export default {
   name: "Header",
   data() {
@@ -85,9 +86,7 @@ export default {
     };
   },
   methods: {
-    logOut() {
-      localStorage.clear();
-    },
+    ...mapActions(["logOut"]),
   },
   mounted() {
     if (localStorage.getItem("user")) {
@@ -100,6 +99,4 @@ export default {
 };
 </script>
 
-<style>
-
-</style>
+<style></style>

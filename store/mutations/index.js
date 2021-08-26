@@ -4,7 +4,7 @@ export default {
         state.allTweet.unshift(tweet);
         localStorage.setItem('tweet', JSON.stringify(state.allTweet));
     },
-    
+
     saveTweet: (state) => {
         if (localStorage.getItem('tweet')) {
             state.allTweet = JSON.parse(localStorage.getItem('tweet'));
@@ -15,7 +15,7 @@ export default {
         state.allTweet.splice(id, 1);
         localStorage.setItem('tweet', JSON.stringify(state.allTweet));
     },
-    
+
     changeTweetOne: (state, tweet) => {
         var forChangeTweet = state.allTweet[Number(tweet.route) - 1];
         if (forChangeTweet.id === tweet.id) {
@@ -27,5 +27,9 @@ export default {
             // of course for test
             console.log('false');
         }
+    },
+
+    logOut: () => {
+        localStorage.clear();
     }
 }

@@ -7,8 +7,12 @@ export default {
     deletedTweet: ({ commit }, id) => {
         commit('deletedTweet', id)
     },
-    
+
     changeTweetOne: ({ commit }, tweet) => {
         commit('changeTweetOne', tweet)
+    },
+
+    logOut: ({ commit }) => {
+        commit('logOut')
     }
 }
