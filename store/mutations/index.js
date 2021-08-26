@@ -19,12 +19,12 @@ export default {
     changeTweetOne: (state, tweet) => {
         var forChangeTweet = state.allTweet[Number(tweet.route) - 1];
         if (forChangeTweet.id === tweet.id) {
-            // of course for test
+            // console log for test
             console.log('true');
             forChangeTweet.tweet = tweet.tweet;
             localStorage.setItem('tweet', JSON.stringify(state.allTweet));
         } else {
-            // of course for test
+            // console log for test
             console.log('false');
         }
     },
