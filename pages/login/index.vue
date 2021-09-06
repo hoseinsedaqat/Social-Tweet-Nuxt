@@ -1,6 +1,5 @@
 <template>
   <div>
-    <app-header></app-header>
     <div class="login-show">
       <div class="container">
         <div class="row">
@@ -55,16 +54,12 @@
         </div>
       </div>
     </div>
-    <app-footer></app-footer>
   </div>
 </template>
 
 <script>
-import { required, minLength, maxLength, email } from "vuelidate/lib/validators";
 // import * as validators from "vuelidate/lib/validators";
-// components
-import Header from "@/components/Header.vue";
-import Footer from "@/components/Footer.vue";
+import { required, minLength, maxLength, email } from "vuelidate/lib/validators";
 export default {
   name: "login",
   data() {
@@ -95,10 +90,6 @@ export default {
         maxLength: maxLength(30),
       },
     },
-  },
-  components: {
-    "app-header": Header,
-    "app-footer": Footer,
   },
   methods: {
     // $v for vuelidate package

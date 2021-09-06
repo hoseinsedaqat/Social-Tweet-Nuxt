@@ -1,6 +1,5 @@
 <template>
   <div>
-    <app-header></app-header>
     <div class="container">
       <div class="row">
         <div class="col-md-8 mx-auto py-4">
@@ -25,16 +24,12 @@
         </div>
       </div>
     </div>
-    <app-footer></app-footer>
   </div>
 </template>
 
 <script>
 import { required } from "vuelidate/lib/validators";
 import { mapState, mapMutations, mapActions } from "vuex";
-// components
-import Header from "@/components/Header.vue";
-import Footer from "@/components/Footer.vue";
 export default {
   data() {
     return {
@@ -48,10 +43,6 @@ export default {
         required,
       },
     },
-  },
-  components: {
-    "app-header": Header,
-    "app-footer": Footer,
   },
   methods: {
     ...mapActions(["changeTweetOne"]),

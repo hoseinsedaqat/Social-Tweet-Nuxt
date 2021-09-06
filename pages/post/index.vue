@@ -1,6 +1,5 @@
 <template>
   <div>
-    <app-header></app-header>
     <div class="container">
       <div class="row">
         <div v-if="allTweet.length > 0">
@@ -54,15 +53,11 @@
         </div>
       </div>
     </div>
-    <app-footer></app-footer>
   </div>
 </template>
 
 <script>
 import { mapState, mapMutations, mapActions } from "vuex";
-// components
-import Header from "@/components/Header.vue";
-import Footer from "@/components/Footer.vue";
 export default {
   name: "post",
   data() {
@@ -70,10 +65,6 @@ export default {
       userData: [],
       like: 0,
     };
-  },
-  components: {
-    "app-header": Header,
-    "app-footer": Footer,
   },
   methods: {
     ...mapActions(["deletedTweet"]),

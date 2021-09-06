@@ -1,6 +1,5 @@
 <template>
   <div>
-    <app-header></app-header>
     <div class="container">
       <div class="row">
         <div class="col-md-8 mx-auto py-5">
@@ -50,23 +49,16 @@
         </div>
       </div>
     </div>
-    <app-footer></app-footer>
   </div>
 </template>
 
 <script>
-import Header from "@/components/Header.vue";
-import Footer from "@/components/Footer.vue";
 export default {
   name: "profile",
   data() {
     return {
       userData: {},
     };
-  },
-  components: {
-    "app-header": Header,
-    "app-footer": Footer,
   },
   mounted() {
     this.userData = JSON.parse(localStorage.getItem("user"));

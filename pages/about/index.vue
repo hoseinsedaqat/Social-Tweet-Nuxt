@@ -1,6 +1,5 @@
 <template>
   <div>
-    <app-header></app-header>
     <div class="container">
       <div class="row">
         <div class="col-md-8 py-4">
@@ -61,13 +60,10 @@
         </div>
       </div>
     </div>
-    <app-footer></app-footer>
   </div>
 </template>
 
 <script>
-import Header from "@/components/Header.vue";
-import Footer from "@/components/Footer.vue";
 // import Image
 import Nuxtjs from "@/assets/img/nuxt.png";
 import Paypal from "@/assets/img/paypal.png";
@@ -83,10 +79,6 @@ export default {
         { src: Laravel, text: "Laravel" },
       ],
     };
-  },
-  components: {
-    "app-header": Header,
-    "app-footer": Footer,
   },
 };
 </script>
