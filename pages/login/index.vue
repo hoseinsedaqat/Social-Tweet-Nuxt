@@ -13,7 +13,8 @@
               <div class="card-body">
                 <form @submit.prevent="signup">
                   <div class="form-group py-2">
-                    <label for="name" class="py-1">Name:</label>
+                    <label for="name" class="py-1" :style="{ style }">Name:</label>
+                    total price: {{ total }}
                     <input
                       type="text"
                       name=""
@@ -89,6 +90,11 @@ export default {
         minLength: minLength(3),
         maxLength: maxLength(30),
       },
+    },
+  },
+  computed: {
+    style() {
+      return { width: "200" + "px" };
     },
   },
   methods: {
